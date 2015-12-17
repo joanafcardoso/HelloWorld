@@ -1,0 +1,33 @@
+public class HelloWorld {
+    public static void main(String [] args) {
+        System.out.println("Hello World");
+
+        printMe();
+
+        int aNumber = 5; // int is the function, aNumber the variable name.
+        int result = aNumber * aNumber;
+        System.out.println("square is " + result);
+
+        int methodResult = squareInteger (10);
+        System.out.println("method square is " + methodResult);
+
+        int sum= sumNumbers (4,5);
+        System.out.println("Sum is " + sum);
+
+    }//this is called a method
+
+    public static void printMe() {
+        System.out.println("Hello Joana");
+    }
+
+    public static int squareInteger(int a) {
+        int result = a * a;
+        return result;
+    }
+
+    public static int sumNumbers(int a,int b) {
+        int result = a + b;
+        return result;
+    }
+
+}
